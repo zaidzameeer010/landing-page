@@ -1,0 +1,30 @@
+{
+  "productName": "CloudAge Landing",
+  "appId": "com.cloudage.landing",
+  "directories": {
+    "output": "release/"
+  },
+  "files": [
+    "dist/**/*",
+    "main.js",
+    "preload.js",
+    "package.json"
+  ],
+  "win": {
+    "icon": "src/assets/icons/icon.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ]
+  },
+  "mac": {
+    "icon": "src/assets/icons/icon.icns",
+    "target": ["dmg"]
+  },
+  "linux": {
+    "icon": "src/assets/icons/icon.png",
+    "target": ["AppImage"]
+  }
+} 
